@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>ДракоНяша</title>
+<style>
+body{font-family:sans-serif;background:#f4eada;color:#2b1d12;margin:0;padding:20px}
+.hero{text-align:center;padding:40px 20px;background:linear-gradient(135deg,#ff8008,#ffc837);color:#fff;border-radius:20px;margin-bottom:30px}
+.hero .visual{font-size:6em;margin:20px 0}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:0 auto}
+.card{background:#fff;border-radius:15px;padding:20px;width:280px;box-shadow:0 4px 15px rgba(0,0,0,.1);text-align:center}
+.visual{height:200px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:8em;background:linear-gradient(135deg,#ffb199,#ffcfdf);margin-bottom:15px}
+#petBtn{position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:#ff4757;border:none;font-size:28px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+</style></head><body>
+<div class="hero"><h1>ДракоНяша</h1><p>Топовый выгул чешуек в столице!</p><div class="visual">🐲</div></div>
+<div class="cards">
+<div class="card"><div class="visual">🦎</div><h3>Зеленый Буба</h3><p>Милашка, обожает жрать пеперони. Идеален для новичков. Без базара!</p><b>500₽</b></div>
+<div class="card"><div class="visual">🐉</div><h3>Фиолетовый Гера</h3><p>Редкий спавн. Дышит пламенем, качает карту. Имба для флексинга.</p><b>1200₽</b></div>
+<div class="card"><div class="visual">🐍</div><h3>Слизь-Крокодил</h3><p>Гибрид, топ для дождя. Не гниет, вечно живой. Жирный прирост лайков.</p><b>900₽</b></div>
+</div>
+<footer style="text-align:center;margin-top:40px;padding:20px;color:#666">
+<h3>📞 Контакты</h3><p>📍 Москва, Лесная 1</p><p>📱 8-800-ДРАКОН</p><p>✉️ hi@dragon.ru</p><p>🕒 24/7</p>
+</footer>
+<button id="petBtn">🐉</button>
+<script>const b=document.getElementById('petBtn');b.onmouseover=()=>{b.style.left=Math.random()*(innerWidth-70)+'px';b.style.top=Math.random()*(innerHeight-70)+'px'}</script>
+</body></html>
